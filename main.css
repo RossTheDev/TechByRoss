@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+:root {
+  --white: #fff;
+  --gray: #888;
+  --gray-dark: #343a40;
+  --primary: #78C2AD;
+  --secondary: #F3969A;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+
+
+div.spacer
+{
+    font-size: 0;
+    height: 10px;
+    line-height: 0;
+}
+
+h1.tophead
+{
+font-size: 60px;
+color: #fff;
+}
+
+h1.topheadb
+{
+font-size: 80px;
+color: #000000;
+}
+
+h2.toptext
+{
+
+font-size: 40px;
+
+}
+p.filler
+{
+
+font-size: 25px;
+
+}
+
+p.dir
+{
+
+font-size: 25px;
+color: black
+
+}
+
+p:link
+{
+
+font-size: 25px;
+color: #fff
+
+}
+
+
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: darkred;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
