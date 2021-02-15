@@ -1,24 +1,32 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-:root {
-  --white: #fff;
-  --gray: #888;
-  --gray-dark: #343a40;
-  --primary: #78C2AD;
-  --secondary: #F3969A;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+
+
+html {
+  font-family: font-awesome;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 
-
-body {background-color: rgb(114,137,218);}
+body {background-color: rgb(255,255,255);}
+body {
+  padding-top: 3.25rem; }
+  body:before {
+    content: ' ';
+    background-image: url(src/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .15; }
 
 div.spacer
 {
@@ -27,37 +35,18 @@ div.spacer
     line-height: 0;
 }
 
-h1.tophead
+div.bigspacer
 {
-font-size: 60px;
-color: #fff;
-
+    font-size: 0;
+    height: 80px;
+    line-height: 0;
 }
 
-h1.topheadb
+div.littlespacer
 {
-font-size: 80px;
-color: #000000;
-}
-
-h2.toptext
-{
-
-font-size: 40px;
-
-}
-p.filler
-{
-
-font-size: 25px;
-
-
-}
-p.filler2
-{
-
-font-size: 35px;
-
+    font-size: 0;
+    height: 3px;
+    line-height: 0;
 }
 
 p.dir
@@ -68,44 +57,55 @@ color: black
 
 }
 
-p:link
+p.medium
 {
 
-font-size: 25px;
-color: #fff
+font-size: 20px;
+color: black
 
 }
-
-
-a:link {
-    color: red;
-}
-
-/* visited link */
-a:visited {
-    color: black;
-}
-
-/* mouse over link */
-a:hover {
-    color: darkred;
-}
-
-/* selected link */
-a:active {
-    color: blue;
-}
-
 
 .container {
   position: relative;
-  text-align: center;
-  color: white;
+ text-align: center;
+  color: black;
 }
 
 .centered {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.bulletin  {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+p {
+  color: black;
+}
+h1 {
+  color: black;
+}
+h2 {
+  color: black;
+}
+
+
+.image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+h2 {
+   position: absolute;
+   top: 200px;
+   left: 0;
+   width: 100%;
 }
