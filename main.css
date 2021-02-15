@@ -28,6 +28,10 @@ body {
     z-index: -1;
     opacity: .15; }
 
+    a:link {
+        color: black;
+    }
+
 div.spacer
 {
     font-size: 0;
